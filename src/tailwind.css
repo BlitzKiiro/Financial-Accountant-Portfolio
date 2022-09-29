@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: Big John;
+  src: url(/dist/assets/fonts/BIG\ JOHN.otf);
+}
+@font-face {
+  font-family: Slim Joe;
+  src: url(/dist/assets/fonts/Slim\ Joe.otf);
+}
+@font-face {
+  font-family: poppins;
+  src: url(/dist/assets/fonts/Poppins-Regular.ttf);
+}
+
+.navlink {
+  @apply md:hover:text-gold-primary transition duration-200 block  border-b-2 border-b-red-50 
+  md:inline-block md:border-none;
+}

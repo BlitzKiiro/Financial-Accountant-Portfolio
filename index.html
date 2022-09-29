@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohamed Hagras</title>
+    <link rel="stylesheet" href="/dist/styles/global.css" />
+    <link rel="stylesheet" href="/dist/libs/css/aos.css" />
+    <script src="/dist/libs/js/aos.js"></script>
+    <script src="/dist/libs/js/anime.js"></script>
+  </head>
+  <body class="bg-dark-1 text-white relative p-0 m-0">
+    <!-- splash screen section begin -->
+    <div
+      class="splash-screen flex backdrop-blur-xl bg-dark-alpha flex-col items-center justify-center fixed w-full h-full z-50"
+    >
+      <!-- loading logo -->
+      <div class="logo flex flex-col items-center justify-center h-full w-full">
+        <!-- name logo svg -->
+        <div class="drawing flex justify-center w-2/3 lg:w-1/3">
+          <svg
+            class="w-full"
+            version="1.2"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 720 240"
+            width="720"
+          >
+            <g
+              fill="none"
+              fill-rule="evenodd"
+              stroke="currentColor"
+              stroke-width="3"
+              class="lines stroke-gold-primary"
+            >
+              <path
+                id="h"
+                class="s0"
+                aria-label="h"
+                d="m29.4 93v112.5h29.5v-42.9h35.7v42.9h29.6v-112.5h-29.6v40.1h-35.7v-40.1z"
+              />
+              <path
+                id="a"
+                class="s0"
+                aria-label="a"
+                d="m162.4 205.5l6.8-14.7h46l6.9 14.7h29.6l-53-112.5h-13.3l-52.5 112.5zm29.9-64.3l11.4 24.7h-23z"
+              />
+              <path
+                id="g"
+                class="s0"
+                aria-label="g"
+                d="m308.9 145.1v19.8l21.7-0.1c-4.6 6.8-12.9 11.1-21.7 11.1-13.8 0-26.6-11.2-26.6-26.6 0-15.5 12.5-26.7 26.6-26.7 7.6 0 13.9 3 18.7 7.5l20.9-20.7c-10.2-10.1-24.2-16.4-39.6-16.4-31.1 0-56.1 25.2-56.1 56.3 0 31 25 56.2 56.1 56.2 31 0 56.2-25.2 56.2-56.2v-4.2z"
+              />
+              <path
+                id="a"
+                class="s0"
+                aria-label="a"
+                d="m516.5 205.5l6.7-14.7h46l6.9 14.7h29.6l-53-112.5h-13.3l-52.5 112.5zm29.8-64.3l11.4 24.7h-22.9z"
+              />
+              <path
+                id="s"
+                class="s0"
+                aria-label="s"
+                d="m681.9 127.5c0-19.2-15.4-34.5-34.6-34.5-19.3 0-34.5 15.5-34.5 34.7 0 19.1 15.2 34.5 34.5 34.5 4.6 0 8.5 3.9 8.5 8.5 0 4.6-3.9 8.4-8.5 8.4-4.7 0-8.4-3.8-8.4-8.5h-26.3c0 19.7 15.4 34.9 34.7 34.9 19.2 0 34.6-15.3 34.6-34.5 0-8.3-2.7-15.8-7.5-21.8-6.3-8-16.2-13.3-27.1-13.3-4.7 0-8.4-3.7-8.4-8.4 0-4.6 3.7-8.5 8.4-8.5 4.6 0 8.5 3.9 8.5 8.5z"
+              />
+              <path
+                id="R"
+                class="s0"
+                aria-label="R"
+                d="m475.7 205.5l-23.8-40.8c8.1-7.5 13.3-18.3 13.3-30.3 0-22.8-18.6-41.4-41.4-41.4h-47.4v112.5h29.5v-29.8h18.4l17.3 29.8zm-69.7-87.6h18.3c9 0 16.2 7.2 16.2 16.2 0 9-7.2 16-16.2 16h-18.3z"
+              />
+            </g>
+          </svg>
+        </div>
+        <!-- cool quote -->
+        <p
+          class="quote-line font-semibold font-SlimJoe opacity-0 text-mygrey text-lg md:text-sm"
+        >
+          Financial Accountant
+        </p>
+      </div>
+    </div>
+
+    <!-- splash screen section end -->
+    <!-- main section begin -->
+    <main class="absolute w-full h-full overflow-x-clip">
+      <!-- nav menu begin -->
+      <!-- mobile menu -->
+      <div class="md:hidden hover:cursor-pointer w-12 mt-7 mx-4">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-12 w-12 toggle-menu"
+          viewBox="0 0 20 20"
+          fill="currentColor"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+            clip-rule="evenodd"
+          />
+        </svg>
+      </div>
+      <!-- desktop menu -->
+      <div
+        class="nav-menu font-Poppins md:h-auto mb-20 md:py-14 md:px-16 md:mb-5 md:block"
+      >
+        <div
+          class="nav-list h-0 overflow-hidden flex flex-col space-y-5 items-center text-lg md:block md:space-x-5 md:h-auto"
+        >
+          <a class="navlink" href="#about">About </a>
+          <a class="navlink" href="#skills">Skills </a>
+          <a class="navlink" href="#experience"> Experience</a>
+          <a class="navlink" href="#education">Education</a>
+          <a class="navlink" href="#contact">Contact me</a>
+        </div>
+      </div>
+      <!-- nav menu end -->
+      <!-- about me section begin -->
+      <div id="about" class="flex items-start justify-center">
+        <div class="grid grid-cols-2 w-4/5 m-0">
+          <div class="col-span-2 md:col-span-1">
+            <div
+              class="flex flex-col items-center justify-center h-full md:space-y-3"
+            >
+              <h1
+                class="text-3xl md:text-5xl text-center text-transparent bg-clip-text bg-gradient-to-r from-gold-1 to-gold-2 font-BigJohn uppercase"
+              >
+                Mohamed Hagras
+              </h1>
+              <p
+                class="text-sm md:text-lg font-SlimJoe text-center font-semibold md:px-10 py-5"
+              >
+                A financial accountant with 3 years experience in the field of
+                accounting, management and supervision of companies
+              </p>
+            </div>
+          </div>
+          <div class="col-span-2 md:col-span-1 flex items-end">
+            <div class="relative">
+              <!--bg svg -->
+              <svg
+                class="absolute h-max -z-10"
+                id="sw-js-blob-svg"
+                viewBox="0 0 100 100"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <defs>
+                  <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">
+                    <stop
+                      id="stop1"
+                      stop-color="rgba(248, 117, 55, 1)"
+                      offset="0%"
+                    ></stop>
+                    <stop
+                      id="stop2"
+                      stop-color="rgba(251, 168, 31, 1)"
+                      offset="100%"
+                    ></stop>
+                  </linearGradient>
+                </defs>
+                <path
+                  fill="url(#sw-gradient)"
+                  d="M19.2,-22.8C24.7,-18.2,29,-12,31.5,-4.5C34.1,3,35,11.9,31.5,18.3C28,24.8,20,28.8,11.3,32.7C2.7,36.5,-6.7,40.2,-15.7,38.8C-24.7,37.4,-33.5,30.9,-36.5,22.5C-39.6,14.2,-37,4.1,-33.9,-4.7C-30.9,-13.5,-27.4,-21,-21.7,-25.5C-15.9,-30.1,-8,-31.7,-0.6,-31C6.8,-30.3,13.6,-27.3,19.2,-22.8Z"
+                  width="100%"
+                  height="100%"
+                  transform="translate(50 50)"
+                  stroke-width="0"
+                  style="transition: all 0.3s ease 0s"
+                ></path>
+              </svg>
+              <!-- avatar -->
+              <img class="z-40" src="/dist/assets/imgs/avatar.png" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- about me section end -->
+      <!-- skills  section begin -->
+      <div id="skills" class="bg-dark-2 py-20 flex justify-center">
+        <div class="grid w-2/3 gap-10 grid-cols-2 py-10">
+          <div
+            data-aos="fade-left"
+            class="col-span-2 md:col-span-1 flex justify-center items-center"
+          >
+            <svg
+              class="w-2/3"
+              viewBox="0 0 511.995 511.995"
+              style="enable-background: new 0 0 511.995 511.995"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:bx="https://boxy-svg.com"
+            >
+              <defs>
+                <linearGradient
+                  id="gradient-14-0"
+                  gradientUnits="userSpaceOnUse"
+                  x1="255.997"
+                  y1="64.248"
+                  x2="255.997"
+                  y2="447.748"
+                  xlink:href="#gradient-14"
+                />
+                <linearGradient id="gradient-14" bx:pinned="true">
+                  <stop offset="0" style="stop-color: rgb(248, 117, 55)" />
+                  <stop offset="1" style="stop-color: rgb(251, 168, 31)" />
+                </linearGradient>
+                <linearGradient
+                  id="gradient-14-7"
+                  gradientUnits="userSpaceOnUse"
+                  x1="255.997"
+                  y1="64.248"
+                  x2="255.997"
+                  y2="447.748"
+                  xlink:href="#gradient-14"
+                />
+                <linearGradient
+                  id="gradient-14-1"
+                  gradientUnits="userSpaceOnUse"
+                  x1="71.992"
+                  y1="232.247"
+                  x2="71.992"
+                  y2="247.247"
+                  xlink:href="#gradient-14"
+                />
+                <linearGradient
+                  id="gradient-14-8"
+                  gradientUnits="userSpaceOnUse"
+                  x1="71.992"
+                  y1="232.247"
+                  x2="71.992"
+                  y2="247.247"
+                  xlink:href="#gradient-14"
+                />
+                <linearGradient
+                  id="gradient-14-2"
+                  gradientUnits="userSpaceOnUse"
+                  x1="71.992"
+                  y1="208.247"
+                  x2="71.992"
+                  y2="223.247"
+                  xlink:href="#gradient-14"
+                />
+                <linearGradient
+                  id="gradient-14-9"
+                  gradientUnits="userSpaceOnUse"
+                  x1="71.992"
+                  y1="208.247"
+                  x2="71.992"
+                  y2="223.247"
+                  xlink:href="#gradient-14"
+                />
+                <linearGradient
+                  id="gradient-14-3"
+                  gradientUnits="userSpaceOnUse"
+                  x1="79.992"
+                  y1="184.247"
+                  x2="79.992"
+                  y2="199.247"
+                  xlink:href="#gradient-14"
+                />
+                <linearGradient
+                  id="gradient-14-10"
+                  gradientUnits="userSpaceOnUse"
+                  x1="79.992"
+                  y1="184.247"
+                  x2="79.992"
+                  y2="199.247"
+                  xlink:href="#gradient-14"
+                />
+                <linearGradient
+                  id="gradient-14-4"
+                  gradientUnits="userSpaceOnUse"
+                  x1="255.995"
+                  y1="288.248"
+                  x2="255.995"
+                  y2="367.248"
+                  xlink:href="#gradient-14"
+                />
+                <linearGradient
+                  id="gradient-14-11"
+                  gradientUnits="userSpaceOnUse"
+                  x1="255.995"
+                  y1="288.248"
+                  x2="255.995"
+                  y2="367.248"
+                  xlink:href="#gradient-14"
+                />
+                <linearGradient
+                  id="gradient-14-5"
+                  gradientUnits="userSpaceOnUse"
+                  x1="275.995"
+                  y1="320.248"
+                  x2="275.995"
+                  y2="335.248"
+                  xlink:href="#gradient-14"
+                />
+                <linearGradient
+                  id="gradient-14-12"
+                  gradientUnits="userSpaceOnUse"
+                  x1="275.995"
+                  y1="320.248"
+                  x2="275.995"
+                  y2="335.248"
+                  xlink:href="#gradient-14"
+                />
+                <linearGradient
+                  id="gradient-14-6"
+                  gradientUnits="userSpaceOnUse"
+                  x1="211.995"
+                  y1="320.248"
+                  x2="211.995"
+                  y2="335.248"
+                  xlink:href="#gradient-14"
+                />
+                <linearGradient
+                  id="gradient-14-13"
+                  gradientUnits="userSpaceOnUse"
+                  x1="211.995"
+                  y1="320.248"
+                  x2="211.995"
+                  y2="335.248"
+                  xlink:href="#gradient-14"
+                />
+              </defs>
+              <g>
+                <path
+                  d="M511.995,256.248h-40.5v-51.215l-43.987-52.785h-5.657h-21.856h-21.856l-11.75,47h67.212l-5.806-23.225l28.7,34.44v45.785 H349.85l-24-96h-46.356v-16.5h-0.363c1.187-0.857,2.336-1.774,3.428-2.767c8.22-7.474,12.935-18.129,12.935-29.233v-16 c0-17.369-14.131-31.5-31.5-31.5h-16c-17.369,0-31.5,14.131-31.5,31.5v14.624c0,13.596,6.622,25.902,16.745,33.376h-0.745v16.5 h-46.356l-24,96H0v15h16.495v176.5h15v-16.499h449v16.499h15v-176.5h16.5V256.248z M385.601,184.248l4.25-17h10.144h10.144l4.25,17 H385.601z M334.389,256.248h-38.894v-17h16v-31.5h-15v16.5h-33v-49h50.644L334.389,256.248z M248.495,239.248v17h-17v-17H248.495z M263.495,239.248h17v17h-17V239.248z M231.495,95.748c0-9.098,7.402-16.5,16.5-16.5h16c9.098,0,16.5,7.402,16.5,16.5v16 c0,6.887-2.925,13.497-8.025,18.134c-5.169,4.7-11.884,6.923-18.905,6.249c-12.375-1.18-22.069-12.495-22.069-25.759V95.748z M247.495,150.309c1.519,0.343,3.067,0.604,4.646,0.755c1.259,0.12,2.517,0.179,3.771,0.179c2.903,0,5.78-0.326,8.583-0.945v9.95 h-17V150.309z M197.851,175.248h50.644v49h-33v-16.5h-15v31.5h16v17H177.6L197.851,175.248z M480.495,416.249h-449V271.248h449 V416.249z"
+                  style="
+                    paint-order: stroke;
+                    fill: url(#gradient-14-0);
+                    stroke: url(#gradient-14-7);
+                  "
+                />
+                <rect
+                  x="15.992"
+                  y="232.247"
+                  width="112"
+                  height="15"
+                  style="
+                    paint-order: stroke;
+                    fill: url(#gradient-14-1);
+                    stroke: url(#gradient-14-8);
+                  "
+                />
+                <rect
+                  x="15.992"
+                  y="208.247"
+                  width="112"
+                  height="15"
+                  style="
+                    paint-order: stroke;
+                    fill: url(#gradient-14-2);
+                    stroke: url(#gradient-14-9);
+                  "
+                />
+                <rect
+                  x="31.992"
+                  y="184.247"
+                  width="96"
+                  height="15"
+                  style="
+                    paint-order: stroke;
+                    fill: url(#gradient-14-3);
+                    stroke: url(#gradient-14-10);
+                  "
+                />
+                <path
+                  d="M343.495,367.248v-79h-175v79H343.495z M183.495,303.248h145v49h-145V303.248z"
+                  style="
+                    paint-order: stroke;
+                    fill: url(#gradient-14-4);
+                    stroke: url(#gradient-14-11);
+                  "
+                />
+                <rect
+                  x="239.995"
+                  y="320.248"
+                  width="72"
+                  height="15"
+                  style="
+                    paint-order: stroke;
+                    fill: url(#gradient-14-5);
+                    stroke: url(#gradient-14-12);
+                  "
+                />
+                <rect
+                  x="199.995"
+                  y="320.248"
+                  width="24"
+                  height="15"
+                  style="
+                    paint-order: stroke;
+                    fill: url(#gradient-14-6);
+                    stroke: url(#gradient-14-13);
+                  "
+                />
+              </g>
+            </svg>
+          </div>
+          <div
+            class="col-span-2 md:col-span-1 text-center md:text-left flex flex-col justify-center"
+            data-aos="fade-right"
+          >
+            <h1 class="text-3xl text-gold-primary font-Poppins mb-5">
+              Technical Skills:
+            </h1>
+            <div class="flext flex-col align-middle justify-center">
+              <ul class="list-none md:list-disc px-10 space-y-5">
+                <li class="text-lg font-Poppins">
+                  Manage the documentary and ledger cycle
+                </li>
+                <li class="text-lg font-Poppins">
+                  Full knowledge of technology
+                </li>
+                <li class="text-lg font-Poppins">
+                  Making financial statements
+                </li>
+                <li class="text-lg font-Poppins">Data Analysis</li>
+                <li class="text-lg font-Poppins">
+                  Clear presentation of all reports
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- skills section end -->
+      <!-- quote section -->
+      <div
+        data-aos="fade-up"
+        class="flex flex-col text-center justify-center items-center space-y-3 px-5 py-14 md:py-32"
+      >
+        <p class="text-3xl md:text-4xl">
+          “Either you run the day, or the day runs you.”
+        </p>
+        <p class="md:text-lg font-SlimJoe">
+          <span class="font-serif">-</span> Jim Rohn
+        </p>
+      </div>
+      <!-- end quote -->
+      <!-- experience section  -->
+      <div id="experience" class="bg-dark-2 py-20 flex justify-center">
+        <div class="grid gap-10 w-4/5 md:w-2/3 grid-cols-2 py-10">
+          <div
+            class="col-span-2 md:col-span-1 flex flex-col justify-center"
+            data-aos="fade-right"
+          >
+            <h1
+              class="text-3xl text-center md:text-left text-gold-primary font-Poppins mb-7"
+            >
+              Professional Experience:
+            </h1>
+            <div class="md:px-10">
+              <ul
+                class="relative list-none px-4 space-y-10 font-normal border-l border-gold-primary"
+              >
+                <!-- list -->
+                <li>
+                  <div
+                    class="absolute -left-1.5 mt-1.5 rounded-full bg-gold-primary w-3 h-3 border border-gray-900"
+                  ></div>
+                  <div class="text-gray-500 flex items-center">
+                    May, 2022 -
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 inline-block mx-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                    Cairo, Al Tagamoa
+                  </div>
+                  <p class="font-semibold text-xl font-Poppins">
+                    Al Murabba CO
+                  </p>
+                  <p class="text-gray-400">
+                    Financial accountant and general supervisor.
+                  </p>
+                </li>
+                <li>
+                  <div
+                    class="absolute -left-1.5 mt-1.5 rounded-full bg-gold-primary w-3 h-3 border border-gray-900"
+                  ></div>
+                  <div class="text-gray-500 flex items-center">
+                    March, 2021 -
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 inline-block mx-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                    Zagazig
+                  </div>
+                  <p class="font-semibold text-xl font-Poppins">
+                    Al Murabba Advertising CO
+                  </p>
+                  <p class="text-gray-400">Sales Manager.</p>
+                </li>
+                <li>
+                  <div
+                    class="absolute -left-1.5 mt-1.5 rounded-full bg-gold-primary w-3 h-3 border border-gray-900"
+                  ></div>
+                  <div class="text-gray-500 flex items-center">
+                    April, 2018 -
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 inline-block mx-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                    Zagazig
+                  </div>
+                  <p class="font-semibold text-xl font-Poppins">AL MATAR CO</p>
+                  <p class="text-gray-400">
+                    Financial accountant and Public Relations.
+                  </p>
+                </li>
+                <li>
+                  <div
+                    class="absolute -left-1.5 mt-1.5 rounded-full bg-gold-primary w-3 h-3 border border-gray-900"
+                  ></div>
+                  <div class="text-gray-500 flex items-center">
+                    October, 2016 -
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 inline-block mx-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                    Zagazig
+                  </div>
+                  <p class="font-semibold text-xl font-Poppins">
+                    AL MAGARAA CO
+                  </p>
+                  <p class="text-gray-400">
+                    Assistant Director of Finance and Public Relations.
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div
+            data-aos="fade-left"
+            class="col-span-2 md:col-span-1 flex justify-center items-center"
+          >
+            <img class="md:w-4/5" src="/dist/assets/imgs/work.jpg" />
+          </div>
+        </div>
+      </div>
+      <!-- end experience section  -->
+      <!-- quote section -->
+      <div
+        data-aos="fade-up"
+        class="flex flex-col text-center justify-center items-center space-y-3 px-5 py-14 md:py-32"
+      >
+        <p class="text-3xl md:text-4xl">“The only way around is through.”</p>
+        <p class="text-lg font-SlimJoe">
+          <span class="md:text-lg font-SlimJoe">-</span> Robert Frost
+        </p>
+      </div>
+      <!-- end quote -->
+      <!-- education  section begin -->
+      <div id="education" class="bg-dark-2 py-20 flex justify-center">
+        <div class="grid w-4/5 md:w-2/3 gap-10 grid-cols-2 py-10">
+          <div
+            data-aos="fade-left"
+            class="col-span-2 md:col-span-1 flex justify-center items-center"
+          >
+            <svg
+              class="w-2/3"
+              viewBox="0 0 500 500"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xmlns:bx="https://boxy-svg.com"
+            >
+              <defs>
+                <linearGradient
+                  id="gradient-0-0"
+                  gradientUnits="userSpaceOnUse"
+                  x1="431.926"
+                  y1="221.864"
+                  x2="431.926"
+                  y2="429.785"
+                  xlink:href="#gradient-0"
+                />
+                <linearGradient id="gradient-0" bx:pinned="true">
+                  <stop offset="0" style="stop-color: rgb(248, 117, 55)" />
+                  <stop offset="1" style="stop-color: rgb(251, 168, 31)" />
+                </linearGradient>
+                <linearGradient
+                  id="gradient-0-1"
+                  gradientUnits="userSpaceOnUse"
+                  x1="252.551"
+                  y1="252.49"
+                  x2="252.551"
+                  y2="371.891"
+                  xlink:href="#gradient-0"
+                />
+                <linearGradient
+                  id="gradient-0-2"
+                  gradientUnits="userSpaceOnUse"
+                  x1="252.552"
+                  y1="82.215"
+                  x2="252.552"
+                  y2="285.319"
+                  xlink:href="#gradient-0"
+                />
+              </defs>
+              <g
+                id="Graduation"
+                transform="matrix(1.175882, 0, 0, 1.175882, -53.931114, -59.693886)"
+                style=""
+              >
+                <polygon
+                  points="445.055 384.794 445.055 221.864 418.805 234.989 418.805 384.777 401.301 429.785 462.551 429.785 445.055 384.794"
+                  style="fill: url(#gradient-0-0)"
+                />
+                <path
+                  d="M229.0648,306.3708l-107.7643-53.88v53.7754c0,36.2433,58.7634,65.625,131.25,65.625,72.4887,0,131.25-29.3817,131.25-65.625V252.49L276.0277,306.3741C257.5813,313.681,247.5133,313.6789,229.0648,306.3708Z"
+                  style="fill: url(#gradient-0-1)"
+                />
+                <path
+                  d="M264.2912,282.8969l186.5207-93.26c6.4579-3.2289,6.4579-8.5107,0-11.74l-186.5207-93.26c-6.4556-3.2289-17.0214-3.2289-23.4793,0l-186.5207,93.26c-6.4556,3.2289-6.4556,8.5107,0,11.74l186.5207,93.26C247.27,286.1258,257.8356,286.1258,264.2912,282.8969Z"
+                  style="fill: url(#gradient-0-2)"
+                />
+              </g>
+            </svg>
+          </div>
+          <div
+            class="col-span-2 md:col-span-1 flex flex-col justify-center"
+            data-aos="fade-right"
+          >
+            <h1
+              class="text-3xl text-center md:text-left text-gold-primary font-Poppins mb-5"
+            >
+              Eduaction:
+            </h1>
+            <div class="flext flex-col align-middle justify-center">
+              <ul class="list-disc px-10 space-y-5">
+                <li class="text-lg font-Poppins">
+                  Data analysis and business intelligence
+
+                  <div class="text-gray-500 text-xs flex items-center">
+                    2022 -
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 inline-block mx-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                    Data Camp
+                  </div>
+                </li>
+                <li class="text-lg font-Poppins">
+                  Bachelor of Commerce
+                  <div class="text-gray-400 mb-1 text-sm">
+                    Accounting Division
+                  </div>
+                  <div class="text-gray-500 text-xs flex items-center">
+                    2021 -
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4 inline-block mx-1"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                      />
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                      />
+                    </svg>
+                    Zagazig
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- education section end -->
+      <!-- contact section -->
+      <div
+        id="contact"
+        data-aos="fade-up"
+        class="flex flex-col text-center justify-center items-center space-y-3 px-5 py-14 md:py-32"
+      >
+        <p class="md:text-5xl text-3xl space-y-14 mb-10 text-gold-primary">
+          Get In Touch
+        </p>
+        <div
+          onclick="window.open('mailto:Mohamedhagras.ng@Gmail.com')"
+          class="md:text-2xl text-lg flex items-center space-x-2 cursor-pointer"
+        >
+          <div
+            class="bg-neutral-700 flex justify-center items-center w-10 h-10 rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 inline-block"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+          </div>
+
+          <span>Mohamedhagras.ng@Gmail.com</span>
+        </div>
+        <div class="md:text-2xl text-lg flex items-center space-x-2">
+          <div
+            class="bg-neutral-700 flex justify-center items-center w-10 h-10 rounded-full"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-6 w-6 inline-block"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              />
+            </svg>
+          </div>
+
+          <span>+2 0102290887</span>
+        </div>
+      </div>
+      <!-- end contact section -->
+      <!-- credit section -->
+      <div class="bg-dark-2 text-sm font-Poppins flex justify-center p-5">
+        Design
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6 mx-2"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+          />
+        </svg>
+        by
+        <a
+          href="https://github.com/BlitzKiiro"
+          target="_blank"
+          class="mx-2 transition cursor-pointer hover:text-gold-primary"
+        >
+          Ahmed Azmy</a
+        >
+      </div>
+      <!-- end credit section -->
+    </main>
+    <!-- main section end -->
+
+    <script type="module" src="/dist/scripts/app.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- Latest version with all easings -->
+    <script src="/dist/libs/js/scrolltosmooth.pkgd.min.js"></script>
+  </body>
+</html>

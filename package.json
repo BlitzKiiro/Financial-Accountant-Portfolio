@@ -1,0 +1,15 @@
+{
+  "name": "hagrasportfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "buildcss": "npx tailwindcss -i ./src/tailwind.css -o ./dist/styles/global.css --watch",
+    "live": "live-server --port=5000  --no-css-inject"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tailwindcss": "^3.1.8"
+  }
+}
