@@ -1159,10 +1159,6 @@ video {
   transition-duration: 150ms;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 @font-face {
   font-family: Big John;
 
